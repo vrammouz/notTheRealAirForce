@@ -1,0 +1,512 @@
+*
+{	
+	font-size: 1.5rem;
+	font-family: sans-serif;
+	color: black;
+}
+
+.banner
+{
+	background-image: url(index_files/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.banner h1
+{
+	color: white;
+	font-style: italic;
+	margin-top: 22%;
+}
+/* header of body in all pages*/
+.background
+{
+	background-image: url(shared_files/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 100%;
+
+}
+/*index class is used in several pages though*/
+.index
+{
+	background-image: linear-gradient(gray,white 80%);
+	width: 100%;
+	z-index: -1;
+	opacity: 0.9;
+}
+
+/*.header
+{
+	background-image: url(nav_files/header.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 110vh;
+}*/
+.header h1
+{
+}
+
+.title h1
+{
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 5rem;
+}	
+
+		/*the navigation could have looked better*/
+/*.wrapper, .navWrapper
+{
+	display:flex;
+	flex-direction: row;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}*/
+
+/*.navWrapper div
+{
+	margin-top: 12px;
+	align-content: center;
+	opacity: 1;
+}
+.navWrapper img
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	max-width: 260px;
+	max-height: 25vh;
+	border-radius: 15px;
+	box-shadow: -5px -5px 10px white;
+}
+
+.navWrapper a:hover
+{
+	opacity: 1;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+.navWrapper img:hover
+{
+	opacity:0.4;
+	transition: opacity 0.5s ease-in-out;
+}*/
+/*.navWrapper nav li
+{
+	font-size: 20px;
+	color: black;
+	box-shadow: -5px -5px 10px white;
+	border-radius: 15px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	position: absolute;
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	z-index: 2000;
+}*/
+
+.navWrapper
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #0D182C;
+	height: 10vh;
+	margin-bottom: 10%;
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	z-index: 2000;
+}
+li
+{
+	display: inline-flex;
+	list-style: none;
+	font-size: 22px;
+	color: white;
+	text-align: right;
+	margin: 10px;
+}
+
+nav ul
+{
+	text-align: right;
+}
+nav li a
+{
+	text-decoration: none;
+	color: white;
+}
+li:hover
+{
+	cursor: pointer;
+	font-weight: bold;
+}
+a:hover
+{
+	text-decoration: none;
+}
+nav li:visited
+{
+	color: white;
+	text-decoration: none;
+}
+
+/*.subNav
+{
+	flex-direction: column;
+	position: absolute;
+	align-self: center;
+	margin-left: 8px;
+	font-size: 25px;
+	padding: 8px;
+}
+.subNav a
+{
+	align-items: center;
+	z-index: 3000;
+	opacity: 0.4;
+}
+.subNav a:hover
+{
+	cursor: pointer;
+	opacity:1;
+	background-color: #54573C;
+	border: 1pt solid gray;
+	border-radius: 70px;
+	padding: 2px;
+	color: white;
+	transform: scale(1.2);
+	transition: opacity 0.5s ease-in-out, scale 0.5s ease-in-out;
+}*/
+
+.logo img
+{
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 5px;
+	margin-top:10px;
+	margin-left: 50px;
+	float: left;
+	z-index: 2000;
+	position: absolute;
+}
+
+.logo img:hover
+{
+	border-radius: 20px;
+	box-shadow: -5px -5px 10px white;
+
+}
+
+/*end of header css*/
+
+/*body content design for all pages*/
+.text
+{
+	text-align: center;
+	margin:0px;
+	padding: 8px;
+}
+
+.text h2
+{
+	font-variant: small-caps;
+}
+
+.border
+{
+	box-shadow: -5px -5px 10px white;
+}
+	/*text component divisions*/
+.component
+{
+	font-size: 2rem;
+	color: black;
+	z-index: 1000;
+	opacity: 2;
+}
+.component:hover
+{
+	transform: scale(1.02);
+	transition: transform 0.5s ease-in-out;
+	cursor: pointer;
+	background-color: #54573C;
+	box-shadow: -5px -5px 10px white;
+}
+/*end of body style*/
+
+/*Comment page properties*/
+.even/*used by .js*/
+{
+	background-color: #EB514B;
+}
+.cmt
+{
+	margin-top: 4.5%;
+	height: 100%;
+}
+.cmt ul
+{
+	list-style: none;
+}
+.cmt ul li
+{
+	padding: 8px;
+	width: 95%;
+}
+.cmt h2
+{
+	margin-left: 10%;
+}
+
+.nameInput/*used by .js*/
+{
+	font-weight: bold;
+	color: navy;
+	margin-left: 20px;
+}
+
+button,input
+{
+	border-radius: 5px;
+	margin: 20px;
+	padding: 10px;
+}
+
+input
+{
+	overflow: auto;
+}
+/*end of comments css*/
+
+/*gallery page*/
+.row
+{
+	display:flex;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.gallery
+{
+	margin-top: 4.5%;
+	height: 100%;
+}
+.gallery .index
+{
+	margin-top: 3.5%;
+}
+.column
+{
+	max-width: 25%;
+}
+
+.column img
+{
+	width: 300px;
+	height: 25vh;
+	margin: 8px;
+	border-radius: 15px;
+	border:solid gray;
+}
+
+.column img:hover
+{
+	cursor: pointer;
+	border: solid black;
+}
+
+/*end of gallery css*/
+
+/*join page*/
+.game
+{
+	height:100vh;
+}
+.box
+{
+	background-color: #77492F;
+	width: 100px;
+	height: 100px;
+	margin:10px;
+}
+
+.feds
+{
+	background-image:url(join_files/army.jpg);width:100px;height:100px;background-size:cover;background-repeat:no-repeat;background-position:center;border-radius:15px;
+}
+
+.terrorists
+{
+	background-image:url(join_files/terr.jpg);width:100px;height:100px;background-size:cover;background-repeat:no-repeat;background-position:center;border-radius:15px;
+}
+/*.translateLeft
+{
+	transform: translateX(-50px);
+	transition: transform 1s;
+}
+
+.translateUp
+{
+	transform: translateY(50px);
+	transition: transform 1s;
+}*/
+.join
+{
+	margin-top: 4.5%;
+}
+/*end of join css*/
+
+/*education page*/
+.edu
+{
+	margin-top: 4.5%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1200px)
+{
+	.column
+	{
+		max-width: 50%;
+	}
+	.header
+	{
+		height: 50%;
+	}	
+}
+
+@media screen and (max-width: 900px)
+{
+	.column
+	{
+		max-width: 50%;
+	}
+	.header
+	{
+		height: 50%;
+	}
+
+}
+
+@media screen and (max-width: 600px)
+{
+	.column
+	{
+		max-width: 100%; 
+	}
+
+	.header
+	{
+		height: 50%;
+	}
+	.navWrapper li
+	{
+		margin:0px;
+	}
+
+}
+
+@media screen and (max-width: 550px)
+{
+	/*header responsiveness*/
+
+	.banner img
+	{
+		margin:0px;
+	}
+	.banner h1
+	{
+		margin-top: 45%;
+	}
+
+	.navWrapper
+	{
+		display: inline-flex;
+		flex-direction: column;
+		height: 75vh;
+		margin-left: 0%;
+		width: 100%;
+		position: relative;
+		padding: 0;
+		margin-bottom: 0%;
+	}
+	.navWrapper a:hover
+	{
+		width: 90%;
+		font-weight: bold;
+	}
+	.logo img
+	{
+		left:30%;
+		top: 0%;
+	}
+	.navWrapper a
+	{
+		display: block;
+		width: 100%;
+		margin-bottom: 2px;
+		background-color: gray;
+		position: relative;
+	}
+	.navWrapper nav li
+	{		
+		display: block;
+		background-color: gray;
+		text-align: center;
+		width: 100%;
+		margin-left: 0%;
+	}
+	.navWrapper ul
+	{
+		margin-top:30% ;
+		align-items: center;
+		text-align: center;
+		width: 95%;
+		margin-left: 0%;
+	}
+/*
+	.navWrapper img
+	{
+		max-width: 100%;
+		max-height: 30vh;
+	}*/
+	/*end of header css*/
+
+	.join,.edu
+	{
+		margin-top: 0%;
+	}
+	/*comments page responsiveness*/
+	button,input
+	{
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.cmt ul
+	{
+		width:100%;
+		margin-left: 0px;
+	}
+	.cmt
+	{
+		margin-top: 0%;
+	}
+	/*end of comment css*/
+
+	.gallery
+	{
+		margin-top: 0%;
+	}
+}
